@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * Hook implementations for brainblocks.
+ */
+
+/**
+ * Implements hook_page_attachments().
+ *
+ * @param array $attachments
+ */
+function brainblocks_page_attachments(array &$attachments) {
+  $xrb_address = _brainblocks_config('xrb_address');
+  $currency = _brainblocks_config('currency');
+  $amount = _brainblocks_config('amount');
+  $attachments['#attached']['drupalSettings']['brainblocks'] = ['xrb_address' => $xrb_address, 'currency' => $currency, 'amount' => $amount];
+  $attachments['#attached']['library'][] = 'brainblocks/main';
+  $attachments['#attached']['library'][] = 'brainblocks/brainblocks.brainblocks';
+}
+
+/**
+ * Helper function for returning config data from this module.
+ *
+ * @param $key
+ *
+ * @return array|mixed|null
+ */
+function _brainblocks_config($key) {
+  return \Drupal::config('brainblocks.settings')->get($key);
+}
+

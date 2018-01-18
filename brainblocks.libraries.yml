@@ -1,0 +1,16 @@
+brainblocks.brainblocks:
+  remote: https://github.com/brainblocks
+  version: 1.0.3
+  license:
+    name: Apache License 2.0
+    url: https://github.com/brainblocks/brainblocks/blob/master/LICENSE.txt
+    gpl-compatible: true
+  js:
+    https://brainblocks.io/brainblocks.min.js: { attributes: { async: true }, type: external, minified: true }
+
+main:
+  version: VERSION
+  js:
+    js/brainblocks-drupal.js: {}
+  dependencies:
+    - core/drupalSettings

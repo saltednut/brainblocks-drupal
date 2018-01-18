@@ -1,0 +1,7 @@
+brainblocks.brainblocks_configuration_form:
+  path: '/admin/commerce/config/brainblocks'
+  defaults:
+    _form: '\Drupal\brainblocks\Form\BrainblocksConfigurationForm'
+    _title: 'Brainblocks Configuration'
+  requirements:
+    _permission: 'administer site configuration'

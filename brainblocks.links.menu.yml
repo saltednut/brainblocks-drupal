@@ -1,0 +1,6 @@
+brainblocks.configuration_form:
+  title: 'Brainblocks'
+  description: 'Configure XRB payment gateway'
+  route_name: brainblocks.brainblocks_configuration_form
+  parent: system.admin_config_system
+  weight: 11

@@ -1,0 +1,6 @@
+name: Brainblocks
+type: module
+description: XRB based payment gateway.
+core: 8.x
+package: Commerce
+configure: brainblocks.settings
