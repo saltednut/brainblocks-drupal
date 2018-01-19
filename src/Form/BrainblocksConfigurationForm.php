@@ -13,7 +13,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class BrainblocksConfigurationForm extends ConfigFormBase {
 
   /**
-   * Constructs a \Drupal\as_tracking\Form\AmplitudeApiForm object.
+   * Constructs a \Drupal\brainblocks\Form\BrainblocksConfigurationForm object.
    *
    * @param \Drupal\Core\Config\ConfigFactoryInterface $config_factory
    *   The factory for configuration objects.
