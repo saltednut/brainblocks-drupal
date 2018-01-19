@@ -1,0 +1,5 @@
+'administer brainblocks':
+  title: 'Configure Brainblocks settings'
+  description: 'Gives permission for the user to change the XRB address and values.'
+  restrict access: true
+
