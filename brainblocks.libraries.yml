@@ -1,6 +1,6 @@
 brainblocks.brainblocks:
   remote: https://github.com/brainblocks
-  version: 1.0.3
+  version: VERSION
   license:
     name: Apache License 2.0
     url: https://github.com/brainblocks/brainblocks/blob/master/LICENSE.txt
